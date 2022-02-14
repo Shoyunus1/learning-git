@@ -1,17 +1,38 @@
-if (true) {
-    var varVariable = "thid is true ";
+// scope 0
 
+{ // scope 1a
+    let a = 1;
+    d
+
+    {
+        let b;
+        a
+        
+
+        {
+            {
+                {
+                    a
+                    b
+                    let c
+                    d = 1;
+                }
+            }
+        }
+    }
 }
 
-var varVariable = "this is false";
-
-console.log(varVariable);
-
-if (true) {
-    let letVariable = "true";
-    let letVariable = "false";
-    console.log(letVariable);
+{ // scope 1c
+    d
 }
 
-let letVariable = "false";
-console.log(letVariable);
+function myfunc() { // scope 1b
+ a
+ var d
+ {
+     d = 1;
+ }
+}
+
+//////////////////////////
+
